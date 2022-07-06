@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    background: linear-gradient(to right, #fc354c, #0abfbc);
+    min-height:100vh;
+}
+
+.container {
+    min-width:60%;
+}
+
+h1 {
+    color:white;
+}
+
+h1, form {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:10vh;
+}
+
+form input, form button {
+    border:none;
+    background:white;
+    padding:0.5rem;
+    font-size:1.5rem;
+}
+
+form input {
+    width:50vh;
+}
+
+.add-task {
+    color:#0abfbc;
+    background-color:white;
+}
+
+.add-task:hover {
+    color:white;
+    background-color:#0abfbc;
+    cursor:pointer;
+}
+
+.task-container {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-width:30%;
+}
+ul {
+min-width:20%;
+}
+
+li{
+    list-style:none;
+}
+
+.toDo-item {
+    background:white;
+    margin-bottom:0.5rem;
+    padding:0.5rem 1rem;
+    border:none;
+    font-size:1.5rem;
+    display:flex;
+    justify-content: flex-end;
+    align-items:center;
+    transition: all 1s ease;
+}
+
+.toDo-item .taskCompleted {
+    margin-left:auto;
+}
+
+.taskCompleted {
+    background-color:white;
+    border:none;
+    margin-right:1rem;
+}
+
+.taskCompleted:hover {
+    color:greenyellow;
+    cursor:pointer;
+}
+
+.taskCompleted::after{
+    color:greenyellow;
+}
+
+.canceledTask {
+    background-color:white;
+    border:none;
+}
+
+.canceledTask:hover {
+    color:red;
+    cursor:pointer;
+}
+
+.done {
+    text-decoration:line-through;
+    opacity:0.6;
+}
+
+.swoop {
+    transform:translateX(20rem);
+    opacity:0;
+}
